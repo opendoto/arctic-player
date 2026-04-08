@@ -34,16 +34,16 @@ Ensure the following system packages are installed and available in your `$PATH`
 
 | Package | Purpose | Debian / Ubuntu | Arch Linux | Fedora | Void Linux |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **Python 3.8+** | Runtime | `sudo apt install python3` | `sudo pacman -S python` | `sudo dnf install python3` | `sudo xbps-install -Su python3` |
-| **mpv** | Audio Engine | `sudo apt install mpv` | `sudo pacman -S mpv` | `sudo dnf install mpv` | `sudo xbps-install -Su mpv` |
-| **ffmpeg** | Metadata (`ffprobe`) | `sudo apt install ffmpeg` | `sudo pacman -S ffmpeg` | `sudo dnf install ffmpeg` | `sudo xbps-install -Su ffmpeg` |
+| **Python 3.8+** | Runtime | `sudo apt install python3` | `sudo pacman -S python` | `sudo dnf install python3` | `sudo xbps-install -Syu python3` |
+| **mpv** | Audio Engine | `sudo apt install mpv` | `sudo pacman -S mpv` | `sudo dnf install mpv` | `sudo xbps-install -Syu mpv` |
+| **ffmpeg** | Metadata (`ffprobe`) | `sudo apt install ffmpeg` | `sudo pacman -S ffmpeg` | `sudo dnf install ffmpeg` | `sudo xbps-install -Syu ffmpeg` |
 
 ## 📦 Installation
 
 Clone the repository and run the main script directly:
 
 ```bash
-git clone [https://github.com/opendoto/arctic-player.git](https://github.com/opendoto/arctic-player.git)
+git clone https://github.com/opendoto/arctic-player.git
 cd arctic-player
 python3 src/arctic.py
 ```
@@ -80,4 +80,3 @@ python3 src/arctic.py
 - **Config Path:** `~/.config/arctic/` (XDG compliant).
 - **Database:** `arctic.db` (SQLite) stores metadata for instant loads.
 - **State:** `state.json` persists your volume and current playback mode.
-```
